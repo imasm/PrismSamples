@@ -35,9 +35,9 @@ namespace PrismApp.ViewModels
                 _eventAggregator.GetEvent<CustomEvent>().Unsubscribe(_subscriptionToken);
         }
         
-        private void OnValueReceived(string value)
+        private void OnValueReceived(CustomEventArgs e)
         {
-            Value = value;
+            Value = e.Value;
         }
     }
 }

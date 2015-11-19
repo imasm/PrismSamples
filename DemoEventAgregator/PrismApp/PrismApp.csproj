@@ -84,6 +84,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Events\CustomEvent.cs" />
+    <Compile Include="Events\CustomEventArgs.cs" />
     <Compile Include="ViewModels\PublisherViewModel.cs" />
     <Compile Include="ViewModels\SubscriberViewModel.cs" />
     <Compile Include="Views\PublisherView.xaml.cs">

@@ -28,7 +28,7 @@ namespace PrismApp.ViewModels
 
         private void PublishValue()
         {
-            _eventAggregator?.GetEvent<CustomEvent>().Publish(Value);
+            _eventAggregator?.GetEvent<CustomEvent>().Publish(new CustomEventArgs(Value));
         }
 
         private bool CanPublish()

@@ -2,7 +2,7 @@ using Prism.Events;
 
 namespace PrismApp.Events
 {
-    public class CustomEvent : PubSubEvent<string>
+    public class CustomEvent : PubSubEvent<CustomEventArgs>
     {
     }
 }
