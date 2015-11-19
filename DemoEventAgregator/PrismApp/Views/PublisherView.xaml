@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="PrismApp.Views.PublisherView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="300">
+    <StackPanel Orientation="Horizontal">
+        <TextBox Text="{Binding Value}"
+            VerticalAlignment="Top" 
+            Width="120"/>
+        
+        <Button Command="{Binding PublishCommand}"
+                VerticalAlignment="Top" 
+                Content="Publish" 
+                Padding="10 2 10 2" 
+                Margin="3 0 3 0"/>
+    </StackPanel>
+</UserControl>
